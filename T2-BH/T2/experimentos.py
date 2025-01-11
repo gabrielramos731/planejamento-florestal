@@ -30,13 +30,13 @@ class experimento:
         Plota os resultados do experimento com base na medida especificada (padrão é 'media').
     """
     
-    def __init__(self, resultados):
+    def __init__(self, resultados, num_calculos_obj):
         self.resultados = resultados
         self.media = 0
         self.maximo = 0
         self.minimo = 0
         self.std = 0
-        self.num_calculos_obj = [5000, 10000, 25000, 50000]
+        self.num_calculos_obj = num_calculos_obj
         self.estatisticas = {num: {'mm': {'media': self.media, 
                                           'maximo': self.maximo, 
                                           'minimo': self.minimo,
